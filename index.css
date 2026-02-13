@@ -1,0 +1,93 @@
+
+/* Doab Vilas Club - Luxury Hospitality Stylesheet */
+
+/* Global Resets & Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFF0; /* Ivory White */
+  color: #1A1A1A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Luxury Branding Colors */
+.bg-royal-gold { background-color: #D4AF37; }
+.text-royal-gold { color: #D4AF37; }
+.bg-deep-maroon { background-color: #800000; }
+.text-deep-maroon { color: #800000; }
+.border-royal-gold { border-color: #D4AF37; }
+
+/* Gradients & Shadows */
+.maroon-gradient {
+  background: linear-gradient(135deg, #800000 0%, #4a0000 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #f1d592 100%);
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(128, 0, 0, 0.2);
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFF0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Glassmorphism Variants */
+.glass-gold {
+  background: rgba(212, 175, 55, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-maroon {
+  background: rgba(128, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
